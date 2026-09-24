@@ -107,7 +107,8 @@ docker compose exec backend python manage.py test labops_agent.tests
 docker compose build frontend
 ```
 
-本仓库提供 GitHub Actions 隔离验收，实际通过情况以对应提交的运行结果为准。
+候选代码已通过一次 GitHub Actions 隔离验收：前后端构建、空库迁移、71 项测试和登录冒烟。
+这不等于完成全部业务、安全或真实 RAG/远程桌面集成验收。
 测试范围与限制见 [验证记录](docs/PREPARATION_VALIDATION.md)。
 正式部署还需要 HTTPS、正式应用服务器、最小权限数据库账号、备份恢复、
 依赖漏洞排查、私有媒体访问控制和完整权限回归。
