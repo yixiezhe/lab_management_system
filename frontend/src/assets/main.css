@@ -1,0 +1,17 @@
+/* main.css */
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 您可以保留或自定义字体相关的其他样式 */
+  font-weight: normal;
+}
+
+/* 如果您有其他类似 a { ... } 或 header { ... } 的默认样式，可以保留，
+   关键是确保 html, body, #app 这三者的 margin 和 padding 都为 0。*/

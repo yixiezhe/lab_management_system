@@ -1,0 +1,54 @@
+[
+  {
+    "model": "procurement.platform",
+    "fields": {
+      "name": "示例采购平台",
+      "prefix": "D",
+      "category": "public"
+    }
+  },
+  {
+    "model": "procurement.whitelistitem",
+    "fields": {
+      "content": "演示玻璃样品瓶",
+      "main_category": [
+        "public"
+      ],
+      "platform": "示例采购平台",
+      "purchase_type": "consumable",
+      "manufacturer": "示例厂商",
+      "cas_number": "",
+      "product_number": "DEMO-001",
+      "parameters": "仅用于界面演示",
+      "specifications": "20mL"
+    }
+  },
+  {
+    "model": "equipment.equipment",
+    "fields": {
+      "name": "演示普通仪器",
+      "location": "示例实验室",
+      "description": "虚构设备，请勿用于真实操作。",
+      "booking_mode": "standard",
+      "time_unit_minutes": 60,
+      "open_time_start": "08:00",
+      "open_time_end": "20:00",
+      "max_advance_days": 7,
+      "is_active": true
+    }
+  },
+  {
+    "model": "equipment.equipment",
+    "fields": {
+      "name": "演示电化学工作站",
+      "location": "示例实验室",
+      "description": "虚构多通道设备。",
+      "booking_mode": "electrochemical_workstation",
+      "time_unit_minutes": 30,
+      "open_time_start": "08:00",
+      "open_time_end": "20:00",
+      "max_advance_days": 7,
+      "is_active": true
+    }
+  }
+]

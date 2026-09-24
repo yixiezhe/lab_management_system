@@ -1,0 +1,117 @@
+@media (max-width: 1600px) {
+  .instrument-booking-page .hour-window-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .instrument-booking-page .hour-window-header-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1280px) {
+  .instrument-booking-page .page-shell--ball-mill {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 38vw);
+    gap: 16px;
+  }
+
+  .instrument-booking-page .page-shell--electrochemical {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 36vw);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .instrument-booking-page .page-shell--ball-mill,
+  .instrument-booking-page .page-shell--electrochemical {
+    grid-template-columns: 1fr;
+  }
+
+  .instrument-booking-page .ball-mill-sidebar-rail {
+    position: static;
+  }
+
+  .instrument-booking-page .slot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instrument-booking-page .slot-grid--electrochemical {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .instrument-booking-page .hour-window-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .instrument-booking-page .tools {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .instrument-booking-page .tool-note {
+    align-items: flex-start;
+  }
+
+  .instrument-booking-page .tool-select,
+  .instrument-booking-page .tool-date-picker,
+  .instrument-booking-page .tool-btn,
+  .instrument-booking-page .history-date-range {
+    width: 100%;
+  }
+
+  .instrument-booking-page .tool-spaced,
+  .instrument-booking-page .tool-tight-spaced {
+    margin-left: 0;
+  }
+
+  .instrument-booking-page .slot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instrument-booking-page .electrochemical-board-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .instrument-booking-page .electrochemical-board-stats {
+    justify-content: flex-start;
+  }
+
+  .instrument-booking-page .slot-grid--electrochemical {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .instrument-booking-page .hour-window-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .instrument-booking-page .ball-mill-calendar-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .instrument-booking-page .calendar-card-header,
+  .instrument-booking-page .booking-board-header,
+  .instrument-booking-page .ball-mill-selection-bar,
+  .instrument-booking-page .ball-mill-queue-apply-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .instrument-booking-page .ball-mill-selection-bar .el-button,
+  .instrument-booking-page .ball-mill-queue-apply-bar .el-button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .instrument-booking-page .hour-window-grid,
+  .instrument-booking-page .slot-grid--electrochemical {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,453 @@
+.instrument-booking-page .ball-mill-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.instrument-booking-page .ball-mill-sidebar-rail {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  width: 100%;
+}
+
+.instrument-booking-page .ball-mill-booking-board {
+  margin-top: 18px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #ebeef5;
+  border-radius: 16px;
+}
+
+.instrument-booking-page .ball-mill-calendar-shell {
+  width: 100%;
+  padding: 16px 16px 12px;
+  border: 1px solid #d8dfe7;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #e7ebf0 0%, #eef2f5 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.instrument-booking-page .calendar-shell-caption {
+  margin-bottom: 8px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: #7b8794;
+  text-transform: uppercase;
+}
+
+.instrument-booking-page .calendar-card-header,
+.instrument-booking-page .booking-board-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.instrument-booking-page .calendar-card-tip,
+.instrument-booking-page .booking-board-header p {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #909399;
+}
+
+.instrument-booking-page .calendar-card-date {
+  flex-shrink: 0;
+  font-size: 13px;
+  color: #606266;
+}
+
+.instrument-booking-page .ball-mill-calendar {
+  margin-top: 14px;
+}
+
+.instrument-booking-page .ball-mill-calendar .el-calendar__header {
+  padding: 0 0 8px;
+  border-bottom: none;
+  background: transparent;
+}
+
+.instrument-booking-page .ball-mill-calendar .el-calendar__body {
+  padding: 0;
+}
+
+.instrument-booking-page .ball-mill-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.instrument-booking-page .ball-mill-calendar-header strong {
+  font-size: 14px;
+  color: #303133;
+}
+
+.instrument-booking-page .ball-mill-calendar .el-calendar-table td {
+  padding: 1px;
+}
+
+.instrument-booking-page .ball-mill-calendar .el-calendar-day {
+  padding: 0;
+}
+
+.instrument-booking-page .ball-mill-date-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: clamp(38px, 4.4vw, 56px);
+  padding: clamp(3px, 0.45vw, 6px) clamp(4px, 0.5vw, 7px);
+  border: 1px solid #e7e9ee;
+  border-radius: 9px;
+  background: #fff;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.instrument-booking-page .ball-mill-date-cell--booked {
+  border-color: #efc13a;
+  background: #ffe58f;
+}
+
+.instrument-booking-page .ball-mill-date-cell--free {
+  background: #fff;
+}
+
+.instrument-booking-page .ball-mill-date-cell--past {
+  border-color: #dcdfe6;
+  background: #f5f7fa;
+}
+
+.instrument-booking-page .ball-mill-date-cell--selected {
+  border-color: #409eff;
+  box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.18);
+}
+
+.instrument-booking-page .ball-mill-date-cell--adjacent {
+  opacity: 0.36;
+}
+
+.instrument-booking-page .ball-mill-date-cell--disabled {
+  background: #f0f2f5;
+  opacity: 0.62;
+}
+
+.instrument-booking-page .ball-mill-date-number {
+  font-size: clamp(11px, 0.95vw, 13px);
+  font-weight: 700;
+  color: #303133;
+}
+
+.instrument-booking-page .ball-mill-date-cell--past .ball-mill-date-number,
+.instrument-booking-page .ball-mill-date-cell--past .ball-mill-date-mark {
+  color: #a8afb8;
+}
+
+.instrument-booking-page .ball-mill-date-mark {
+  min-height: 12px;
+  font-size: clamp(8px, 0.7vw, 10px);
+  color: #8c6b14;
+}
+
+.instrument-booking-page .calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.instrument-booking-page .legend-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #606266;
+}
+
+.instrument-booking-page .legend-chip--white {
+  background: #fff;
+}
+
+.instrument-booking-page .legend-chip--yellow {
+  border-color: #efc25a;
+  background: #fff3bf;
+}
+
+.instrument-booking-page .legend-chip--gray {
+  border-color: #d6dbe3;
+  background: #f3f4f6;
+}
+
+.instrument-booking-page .legend-chip--blue {
+  border-color: #409eff;
+  background: #eef6ff;
+}
+
+.instrument-booking-page .ball-mill-form {
+  padding: 16px;
+  background: #fafafa;
+  border: 1px solid #ebeef5;
+  border-radius: 12px;
+}
+
+.instrument-booking-page .ball-mill-param-control {
+  width: clamp(140px, 18vw, 220px);
+  max-width: 100%;
+}
+
+.instrument-booking-page .ball-mill-selection-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: #606266;
+  font-size: 13px;
+}
+
+.instrument-booking-page .ball-mill-top-book-btn {
+  min-width: clamp(180px, 30vw, 240px);
+  max-width: 100%;
+}
+
+.instrument-booking-page .ball-mill-selection-bar .el-button {
+  margin-left: auto;
+  white-space: normal;
+}
+
+.instrument-booking-page .ball-mill-queue-apply-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #f2d39e;
+  border-radius: 12px;
+  background: #fff6e5;
+  color: #7c4d12;
+  font-size: 13px;
+}
+
+.instrument-booking-page .ball-mill-queue-apply-bar .el-button {
+  margin-left: auto;
+  white-space: normal;
+}
+
+.instrument-booking-page .booking-board-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #303133;
+}
+
+.instrument-booking-page .queue-board-header {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.instrument-booking-page .queue-board-header h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #303133;
+}
+
+.instrument-booking-page .hour-window-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.instrument-booking-page .hour-window-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 158px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #dfe6dc;
+  border-radius: 12px;
+  background: #eef8eb;
+}
+
+.instrument-booking-page .hour-window-card--green {
+  border-color: #b7d7a8;
+  background: #eef8eb;
+}
+
+.instrument-booking-page .hour-window-card--yellow {
+  border-color: #f0c36d;
+  background: #fff7df;
+}
+
+.instrument-booking-page .hour-window-card--red {
+  border-color: #edd3d3;
+  background: #fffafa;
+}
+
+.instrument-booking-page .hour-window-card--unavailable {
+  border-color: #d81b7a !important;
+  background: #ffe5f2 !important;
+}
+
+.instrument-booking-page .hour-window-card--direct-slot {
+  box-shadow: inset 0 0 0 1px rgba(64, 158, 255, 0.16);
+}
+
+.instrument-booking-page .hour-window-card--queue-slot {
+  box-shadow: inset 0 0 0 1px rgba(230, 162, 60, 0.28);
+}
+
+.instrument-booking-page .hour-window-card--blocked-slot {
+  box-shadow: inset 0 0 0 1px rgba(144, 147, 153, 0.35);
+}
+
+.instrument-booking-page .hour-window-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.instrument-booking-page .hour-window-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.instrument-booking-page .hour-window-queue-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #7a4b00;
+  background: #ffe8bf;
+  white-space: nowrap;
+}
+
+.instrument-booking-page .hour-window-speed {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #1f2937;
+}
+
+.instrument-booking-page .hour-window-summary {
+  min-height: 16px;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #606266;
+}
+
+.instrument-booking-page .hour-window-positions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.instrument-booking-page .hour-window-queue-preview {
+  display: grid;
+  gap: 3px;
+  padding: 6px;
+  border: 1px dashed #e3b86e;
+  border-radius: 8px;
+  background: #fffaf0;
+}
+
+.instrument-booking-page .hour-window-queue-preview-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #5f4b2e;
+}
+
+.instrument-booking-page .queue-preview-user {
+  flex: 1;
+  font-weight: 700;
+  color: #3c2f1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.instrument-booking-page .hour-window-queue-preview-more,
+.instrument-booking-page .hour-window-queue-preview-empty {
+  font-size: 10px;
+  line-height: 1.2;
+  color: #7c6a4a;
+}
+
+.instrument-booking-page .hour-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-height: 44px;
+  padding: 6px;
+  border: 1px solid rgba(96, 98, 102, 0.16);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.84);
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.instrument-booking-page .hour-position:disabled {
+  cursor: not-allowed;
+  opacity: 0.96;
+}
+
+.instrument-booking-page .hour-position--selected {
+  border-color: #409eff;
+  box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.16);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.instrument-booking-page .hour-position--occupied {
+  border-color: #e9bcbc;
+  background: #f9d7d7;
+  color: #8a3c3c;
+}
+
+.instrument-booking-page .hour-position--occupied:disabled {
+  opacity: 1;
+}
+
+.instrument-booking-page .hour-position--blocked {
+  border-color: #d0b27d;
+  background: #fbf4e7;
+}
+
+.instrument-booking-page .hour-position--window-queue {
+  border-style: dashed;
+  border-color: #e3b86e;
+  background: #fff8eb;
+}
+
+.instrument-booking-page .hour-position--window-blocked {
+  border-style: dashed;
+  border-color: #c8cfd8;
+  background: #f2f4f7;
+}
+
+.instrument-booking-page .hour-position-no {
+  font-size: 13px;
+  font-weight: 700;
+  color: #303133;
+}
+
+.instrument-booking-page .hour-position--occupied .hour-position-no {
+  color: #8a3c3c;
+}

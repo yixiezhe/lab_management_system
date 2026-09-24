@@ -1,0 +1,4 @@
+# Optional override: requires a configured Docker GPU runtime.
+services:
+  ollama:
+    gpus: all

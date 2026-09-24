@@ -1,0 +1,78 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Django runtime files
+DjangoProject/media/
+DjangoProject/staticfiles/
+*.sqlite3
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs and local process state
+logs/
+*.log
+*.pid
+*.status
+
+# Database dumps and local backups
+backups/
+*.sql
+*.dump
+*.bak
+*.bak_*
+*_backup.py
+*.zip
+!deploy/guacamole/init/*.sql
+!database/schema/*.sql
+
+# Local screenshots and one-off repair notes
+/*.png
+/问题记录/
+/粘贴.md
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local agent metadata
+.agents/
+
+# Private deployment artifacts (release preparation)
+exports/
+*.xlsx
+*.xls
+*.pem
+*.key
+*.pfx
+*.p12
+*.tar
+*.tar.gz
+*.7z
+*.jar
+qdrant_storage/
+ollama_models/
+private_knowledge/

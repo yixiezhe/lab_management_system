@@ -1,0 +1,384 @@
+.instrument-booking-page.page {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: calc(100vh - 120px);
+}
+
+.instrument-booking-page .page-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.instrument-booking-page .page-shell--ball-mill,
+.instrument-booking-page .page-shell--electrochemical {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.instrument-booking-page .page-shell--ball-mill {
+  max-width: 1520px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 32vw);
+}
+
+.instrument-booking-page .page-shell--electrochemical {
+  max-width: 1480px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 30vw);
+}
+
+.instrument-booking-page .wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.instrument-booking-page .wrap--ball-mill,
+.instrument-booking-page .wrap--electrochemical {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+}
+
+.instrument-booking-page .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.instrument-booking-page .header h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.instrument-booking-page .tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.instrument-booking-page .tool-note {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-top: 6px;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fafbfc 0%, #f4f6f8 100%);
+  color: #606266;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.instrument-booking-page .tool-note--ball-mill {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.instrument-booking-page .tool-note-primary {
+  color: #303133;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.instrument-booking-page .tool-note-secondary {
+  color: #909399;
+}
+
+.instrument-booking-page .tool-select {
+  width: clamp(180px, 24vw, 260px);
+}
+
+.instrument-booking-page .tool-date-picker {
+  width: clamp(150px, 18vw, 190px);
+}
+
+.instrument-booking-page .tool-btn {
+  white-space: normal;
+}
+
+.instrument-booking-page .tool-spaced {
+  margin-left: 12px;
+}
+
+.instrument-booking-page .tool-tight-spaced {
+  margin-left: 8px;
+}
+
+.instrument-booking-page .bar {
+  margin-bottom: 14px;
+}
+
+.instrument-booking-page .slot-section {
+  margin-top: 12px;
+}
+
+.instrument-booking-page .slot-guide {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #606266;
+}
+
+.instrument-booking-page .slot-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #606266;
+}
+
+.instrument-booking-page .slot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.instrument-booking-page .slot-grid .el-button + .el-button {
+  margin-left: 0;
+}
+
+.instrument-booking-page .slot {
+  width: 100%;
+  justify-content: center;
+}
+
+.instrument-booking-page .channel-offline-tip {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #8a2d2d;
+  background: #fde7e7;
+  border: 1px solid #f4b5b5;
+}
+
+.instrument-booking-page .no-slots {
+  margin-top: 16px;
+  color: #909399;
+  text-align: center;
+}
+
+.instrument-booking-page .history-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.instrument-booking-page .history-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.instrument-booking-page .history-date-range {
+  width: min(100%, 360px);
+}
+
+.instrument-booking-page .booking-admin-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.instrument-booking-page .my-bookings-panel {
+  margin-bottom: 16px;
+  padding: 14px 16px 16px;
+  border: 1px solid #ebeef5;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.instrument-booking-page .my-bookings-panel h3 {
+  margin-top: 0;
+}
+
+.history-dialog .el-dialog {
+  max-width: 960px;
+}
+
+
+.instrument-booking-page .electrochemical-board-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  border: 1px solid #d8e2ef;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+}
+
+.electrochemical-channel-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.electrochemical-channel-option-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.instrument-booking-page .electrochemical-board-title {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.instrument-booking-page .electrochemical-board-kicker {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.instrument-booking-page .electrochemical-board-title strong {
+  color: #1f2937;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.instrument-booking-page .electrochemical-board-stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.instrument-booking-page .electrochemical-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #d6dbe3;
+  border-radius: 999px;
+  color: #4b5563;
+  background: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.instrument-booking-page .electrochemical-stat b {
+  font-size: 16px;
+  color: #111827;
+}
+
+.instrument-booking-page .electrochemical-stat--free {
+  border-color: #9bd0aa;
+  background: #effaf2;
+}
+
+.instrument-booking-page .electrochemical-stat--selected {
+  border-color: #8bbcf7;
+  background: #eef6ff;
+}
+
+.instrument-booking-page .electrochemical-stat--occupied {
+  border-color: #e8a5a5;
+  background: #fff1f1;
+}
+
+.instrument-booking-page .slot-section--electrochemical {
+  margin-top: 0;
+}
+
+.instrument-booking-page .slot-grid--electrochemical {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.instrument-booking-page .slot--electrochemical.el-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  min-height: 76px;
+  height: auto;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  text-align: left;
+  white-space: normal;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+.instrument-booking-page .slot--electrochemical.el-button:hover,
+.instrument-booking-page .slot--electrochemical.el-button:focus {
+  border-color: #4f8edc;
+  box-shadow: 0 0 0 2px rgba(79, 142, 220, 0.14);
+}
+
+.instrument-booking-page .slot--electrochemical.is-disabled {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.instrument-booking-page .slot--electrochemical .slot-time {
+  width: 100%;
+  color: #111827;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.instrument-booking-page .slot--electrochemical .slot-meta {
+  max-width: 100%;
+  color: #5f6b7a;
+  font-size: 12px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.instrument-booking-page .slot--electrochemical.slot--selected.el-button {
+  border-color: #2f80ed !important;
+  background: #eaf3ff !important;
+  box-shadow: inset 0 0 0 1px rgba(47, 128, 237, 0.22);
+}
+
+.instrument-booking-page .slot--electrochemical.slot--selected .slot-meta {
+  color: #1f5ca8;
+  font-weight: 700;
+}
+
+.instrument-booking-page .slot--electrochemical.slot--occupied.el-button {
+  border-color: #e19999 !important;
+  background: #fff0f0 !important;
+}
+
+.instrument-booking-page .slot--electrochemical.slot--occupied .slot-time,
+.instrument-booking-page .slot--electrochemical.slot--occupied .slot-meta {
+  color: #8a2d2d !important;
+}
+
+.instrument-booking-page .slot--electrochemical.slot--past.el-button {
+  border-color: #d6dbe3 !important;
+  background: #f3f4f6 !important;
+}
+
+.instrument-booking-page .slot--electrochemical.slot--past .slot-time,
+.instrument-booking-page .slot--electrochemical.slot--past .slot-meta {
+  color: #7b8794 !important;
+}
+
+.instrument-booking-page .slot--electrochemical.slot--offline.el-button {
+  border-color: #d9a8c4 !important;
+  background: #fff0f7 !important;
+}
+
+.instrument-booking-page .slot--electrochemical.slot--offline .slot-time,
+.instrument-booking-page .slot--electrochemical.slot--offline .slot-meta {
+  color: #8b2e61 !important;
+}

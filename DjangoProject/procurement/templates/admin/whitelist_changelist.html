@@ -1,0 +1,12 @@
+{% extends "admin/change_list.html" %}
+{% load i18n %}
+
+{% block object-tools-items %}
+  <li>
+    {# 使用 Django 标准的、带命名空间的 URL 名称 #}
+    <a href="{% url 'admin:procurement_whitelistitem_import_excel' %}" class="addlink">
+      {% trans '从Excel导入' %}
+    </a>
+  </li>
+  {{ block.super }}
+{% endblock %}

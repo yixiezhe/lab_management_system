@@ -1,0 +1,14 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>
+        <p>请选择一个 .xlsx 文件进行上传。文件必须包含以下列名: "主分类", "平台/服务", "物品类别", "物品名称"</p>
+        {{ form.as_p }}
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="上传并导入">
+    </div>
+</form>
+{% endblock %}

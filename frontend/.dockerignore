@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+*.log
+.vscode/
+
+.env.*
+!.env.example
+.git/
+*.pem
+*.key
+*.pfx
+exports/
+backups/
